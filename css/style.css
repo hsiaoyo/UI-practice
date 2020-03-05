@@ -6,6 +6,9 @@
 ul{
   list-style-type: none;
 }
+a:hover{
+  text-decoration: none;
+}
 body{
   background: #dedada;
 }
@@ -31,14 +34,30 @@ body{
 li.blue{
   border-top: 5px solid lightblue;
 }
+li.blue li a:hover{
+  background: lightblue;
+  color: white;
+}
 li.green{
   border-top: 5px solid lightgreen;
+}
+li.green li a:hover{
+  background: lightgreen;
+  color: white;
 }
 li.red{
   border-top: 5px solid red;
 }
+li.red li a:hover{
+  background: red;
+  color: white;
+}
 li.yellow{
-  border-top: 5px solid yellow;
+  border-top: 5px solid #ffc107;;
+}
+li.yellow li a:hover{
+  background: #ffc107;;
+  color: white;
 }
 ul.sub{
   position: absolute;
@@ -48,6 +67,8 @@ ul.sub{
   min-width: 23vw;
 }
 ul.sub > li > a{
+  display: block;
+  line-height: 40px;
   color: #000;
   font-size: .8rem;
 }
