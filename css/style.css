@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+ul{
+  list-style-type: none;
+}
 body{
   background: #dedada;
 }
@@ -13,10 +16,9 @@ body{
 #nav > ul{
   display: flex;
   justify-content: space-around;
-
-  list-style-type: none;
 }
 #nav > ul > li{
+  position: relative;
   padding: .5rem;
   min-width: 23vw;
   text-align: center;
@@ -27,17 +29,29 @@ body{
   color: #000;
 }
 li.blue{
-    border-top: 5px solid lightblue;
+  border-top: 5px solid lightblue;
 }
 li.green{
-    border-top: 5px solid lightgreen;
+  border-top: 5px solid lightgreen;
 }
 li.red{
-    border-top: 5px solid red;
+  border-top: 5px solid red;
 }
 li.yellow{
-    border-top: 5px solid yellow;
+  border-top: 5px solid yellow;
 }
+ul.sub{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 23vw;
+}
+ul.sub > li > a{
+  color: #000;
+  font-size: .8rem;
+}
+
 @media (min-width:556px) {
   #nav > ul > li > a{
     font-size: 1rem;
