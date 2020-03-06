@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a.title{
+  display: block;
+  padding: .5rem 0;
+  background: rgba(0,123,255,.5);
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container{
+  position: relative;
+}
+.content{
+  padding: 1rem;
+  position: absolute;
+  left: 0;
+}
+.content .box{
+  padding: 1rem;
+  height: 100%;
+  background: #ccc;
+}
