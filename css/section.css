@@ -17,6 +17,13 @@ a.title{
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
+  transition: .3s linear;
+}
+a.title:hover{
+  background: #0091cc;
+}
+a.title.active{
+  background: #0091cc;
 }
 .container{
   position: relative;
