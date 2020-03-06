@@ -34,7 +34,7 @@ body{
 li.blue{
   border-top: 5px solid lightblue;
 }
-li.blue li a:hover{
+li.blue li:hover a{
   background: lightblue;
   color: white;
 }
@@ -47,7 +47,7 @@ li.blue ul.sub ul li a:hover{
 li.green{
   border-top: 5px solid lightgreen;
 }
-li.green li a:hover{
+li.green li:hover a{
   background: lightgreen;
   color: white;
 }
@@ -60,7 +60,7 @@ li.green ul.sub ul li a:hover{
 li.red{
   border-top: 5px solid red;
 }
-li.red li a:hover{
+li.red li:hover a{
   background: red;
   color: white;
 }
@@ -73,7 +73,7 @@ li.red ul.sub ul li a:hover{
 li.yellow{
   border-top: 5px solid #ffc107;;
 }
-li.yellow li a:hover{
+li.yellow li:hover a{
   background: #ffc107;;
   color: white;
 }
@@ -103,7 +103,10 @@ ul.sub li ul{
   position: absolute;
   top: 0;
   left: 100%;
-  width: 23vw;
+  width: 25vw;
+}
+ul.sub.last li ul{
+  left: -100%;
 }
 ul.sub li ul li a{
   display: block;
