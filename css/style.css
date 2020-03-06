@@ -38,12 +38,24 @@ li.blue li a:hover{
   background: lightblue;
   color: white;
 }
+li.blue ul.sub ul li a{
+  background: lightblue;
+}
+li.blue ul.sub ul li a:hover{
+  background: #0d9be5;
+}
 li.green{
   border-top: 5px solid lightgreen;
 }
 li.green li a:hover{
   background: lightgreen;
   color: white;
+}
+li.green ul.sub ul li a{
+  background: lightgreen;
+}
+li.green ul.sub ul li a:hover{
+  background: #248e3c;
 }
 li.red{
   border-top: 5px solid red;
@@ -52,12 +64,24 @@ li.red li a:hover{
   background: red;
   color: white;
 }
+li.red ul.sub ul li a{
+  background: red;
+}
+li.red ul.sub ul li a:hover{
+  background: #ad3642;
+}
 li.yellow{
   border-top: 5px solid #ffc107;;
 }
 li.yellow li a:hover{
   background: #ffc107;;
   color: white;
+}
+li.yellow ul.sub ul li a{
+  background: #ffc107;
+}
+li.yellow ul.sub ul li a:hover{
+  background: #ff8d00;
 }
 ul.sub{
   position: absolute;
@@ -66,12 +90,28 @@ ul.sub{
   background: white;
   min-width: 23vw;
 }
+ul.sub li{
+  position: relative;
+}
 ul.sub > li > a{
   display: block;
   line-height: 40px;
   color: #000;
   font-size: .8rem;
 }
+ul.sub li ul{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 23vw;
+}
+ul.sub li ul li a{
+  display: block;
+  line-height: 40px;
+  font-size: .8rem;
+  color: #fff;
+}
+
 
 @media (min-width:556px) {
   #nav > ul > li > a{
