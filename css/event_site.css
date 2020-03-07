@@ -96,7 +96,7 @@
   top: 11%;
   width: 3rem;
   animation-name: drive;
-  animation-duration: 8s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -130,5 +130,20 @@ img{
   }
   to{
     left: 150%;
+  }
+}
+@media (min-width:556px) {
+  .car{
+    animation-duration: 7s;
+  }
+}
+@media (min-width:768px) {
+  .car{
+    animation-duration: 8s;
+  }
+}
+@media (min-width:992px) {
+  .car{
+    animation-duration: 10s;
   }
 }
