@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+.circle{
+  border-radius: 50%;
+}
+.blue{
+  background: blue;
+}
+.red{
+  background: red;
+}
+.orange{
+  background: orange;
+}
+.yellow{
+  background: yellow;
+}
+.pink{
+  background: pink;
+}
+.purple{
+  background: purple;
+}
+.green{
+  background: green;
+}
