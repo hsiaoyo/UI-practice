@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+#header{
+  background: #ccc;
+  height: 30vh;
+}
 .circle{
+  position: fixed;
   border-radius: 50%;
 }
 .blue{
